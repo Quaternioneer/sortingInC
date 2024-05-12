@@ -1,0 +1,31 @@
+Exercies inspired by 
+Numerical Recipes in C, Chapter 8: Sorting
+A DSP Primer with Applications to Digital Audio and Computer Music, Chapter 8: The Discrete Fourier Transform and FFT
+
+Straight Sorted: Straight Insertion version history
+Version 0: Compiles, but there is run-timer error where 1 and 0 are out of order and the number 9 is replaced with another 0.
+Output:
+
+Displaying integers: 
+1.000000
+2.000000
+3.000000
+4.000000
+5.000000
+6.000000
+7.000000
+8.000000
+9.000000
+0.000000
+Displaying sorted integers: 
+1.000000
+0.000000
+0.000000
+2.000000
+3.000000
+4.000000
+5.000000
+6.000000
+7.000000
+8.000000
+
