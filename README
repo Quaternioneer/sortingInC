@@ -3,9 +3,8 @@ Numerical Recipes in C, Chapter 8: Sorting
 A DSP Primer with Applications to Digital Audio and Computer Music, Chapter 8: The Discrete Fourier Transform and FFT
 
 Straight Sorted: Straight Insertion version history
-Version 0: Compiles, but there is run-timer error where 1 and 0 are out of order and the number 9 is replaced with another 0.
-Output:
-
+Version 0: Compiles, but there is run-timer error where 1 and 0 are out of order. And on the second run (without recompiling in between), the number 9 is also replaced with another 0.
+Initial Output:
 Displaying integers: 
 1.000000
 2.000000
@@ -20,6 +19,30 @@ Displaying integers:
 Displaying sorted integers: 
 1.000000
 0.000000
+2.000000
+3.000000
+4.000000
+5.000000
+6.000000
+7.000000
+8.000000
+9.000000
+
+Second Output:
+Displaying integers: 
+1.000000
+2.000000
+3.000000
+4.000000
+5.000000
+6.000000
+7.000000
+8.000000
+9.000000
+0.000000
+Displaying sorted integers: 
+1.000000
+-0.000000
 0.000000
 2.000000
 3.000000
@@ -28,4 +51,7 @@ Displaying sorted integers:
 6.000000
 7.000000
 8.000000
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
 
+Version 0.1: I changed the array indices form 1 to n to 0 to n-1. As I understand it, C's arrays have always spanned 0 to N-1, so I don't understand why it was written starting at 1. Howver, in the comments it does say, "Sorts an array arr[1..n]". I knew that C++ started at 0, but this is my one of first C programs.
